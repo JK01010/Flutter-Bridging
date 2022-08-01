@@ -9,7 +9,7 @@ class MainController extends ChangeNotifier {
       initialTime: TimeOfDay.now(),
       initialEntryMode: TimePickerEntryMode.dial,
     );
-    if (picked != null && picked != selectedTime) {
+    if(picked != null && picked != selectedTime) {
       selectedTime = picked;
       notifyListeners();
     }
